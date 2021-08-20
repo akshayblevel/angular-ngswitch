@@ -1,0 +1,16 @@
+<div *ngFor="let employee of employees">
+  <div [ngSwitch]="employee.id">
+    {{employee.id}} <br/>
+    <span *ngSwitchCase="1">
+Odd Number
+</span>
+    <span *ngSwitchCase="2">
+Even Number
+</span>
+    <span *ngSwitchDefault>
+Not Defined
+</span>
+  </div>
+  {{employee.name}}
+  <hr />
+</div>
